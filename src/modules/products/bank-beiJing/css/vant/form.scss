@@ -1,0 +1,81 @@
+.beijing-common {
+  .van-form {
+    width: 100%;
+  }
+
+  /deep/.van-field {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    .van-field__label {
+      padding: 10px 0;
+      white-space: nowrap;
+
+      span {
+        font-size: 30px;
+
+        font-weight: 400;
+        color: #999999;
+      }
+    }
+
+    .van-field__value {
+      .van-field__body {
+        .van-field__control {
+          font-size: 30px;
+          font-weight: 400;
+          color: #434343;
+        }
+
+        // placeholder set
+        .van-field__control::placeholder {
+          color: #8f8b8a !important;
+        }
+
+        .van-button {
+          font-size: 30px;
+          font-weight: 400;
+          color: #3552d0;
+          border: 0;
+        }
+      }
+    }
+
+    .van-field__error-message {
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #df0301;
+    }
+  }
+
+  .van-field + .van-field:last-child::after {
+    border: unset !important;
+  }
+
+  // error msg of form
+  .van-field--error .van-field__control,
+  .van-field--error .van-field__control::placeholder {
+    color: #8f8b8a !important;
+  }
+
+  /deep/.van-cell::after {
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  .van-cell--borderless::after,
+  .van-cell:last-child::after {
+    display: block;
+  }
+
+  // dialog
+  .van-dialog {
+    .van-dialog__footer {
+      .van-dialog__confirm {
+        .van-button__text {
+          color: #df0301 !important;
+        }
+      }
+    }
+  }
+}

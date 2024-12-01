@@ -1,0 +1,49 @@
+.replac-card-dialog {
+  border-radius: 0px !important;
+  .van-dialog__header {
+    font-size: 18px;
+
+    font-weight: 500;
+    color: #333333;
+    border-bottom: 2px solid #dedede;
+    padding: 12px 0;
+  }
+  .van-dialog__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .van-dialog__message {
+      font-size: 16px;
+
+      font-weight: 500;
+      color: #333333;
+      margin-top: 26px;
+      padding: 0;
+    }
+  }
+  .van-dialog__footer {
+    margin: 26px 32px 32px 32px;
+    .van-dialog__cancel {
+      height: 40px;
+      width: 30%;
+      background: #f7f7f7;
+      border-radius: 7px;
+      border: 1px solid #cacaca;
+      font-size: 14px;
+
+      font-weight: 500;
+      color: #333333;
+    }
+    .van-dialog__confirm {
+      height: 40px;
+      width: 30%;
+      margin-left: 30px;
+      background: #3552d0;
+      border-radius: 7px;
+      font-size: 14px;
+
+      font-weight: 500;
+      color: #ffffff;
+    }
+  }
+}

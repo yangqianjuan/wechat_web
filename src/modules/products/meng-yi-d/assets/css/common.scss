@@ -1,0 +1,158 @@
+$btn-bg-color: #ff4a34;
+$btn-border-color: #ec5a47;
+$bg-color-1: #fceae8;
+$bg-color-2: #fafafa;
+$bg-color-3: #fa644c;
+$white: #ffffff;
+$default-font-color: #333333;
+$font-color-1: #ed5a48;
+$font-color-2: #727272;
+$font-color-3: #ccc;
+$font-color-4: #252525;
+$font-color-5: #a2a2a2;
+$font-color-6: #cecece;
+$font-color-7: #666666;
+$font-color-8: #3a3a3a;
+$font-color-9: #8e8e8e;
+$border-color-1: #e5e5e5;
+
+// 操作按钮
+/deep/.common-submit-btn {
+  width: 100%;
+  button {
+    height: 90px;
+    width: 671px;
+    span {
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      line-height: 34px;
+    }
+  }
+
+  .submit-btn {
+    width: 100%;
+    margin-top: 53px;
+    display: flex;
+    justify-content: center;
+    button {
+      background: $btn-bg-color;
+      border: 1px solid $btn-border-color;
+      span {
+        color: $white;
+      }
+    }
+  }
+  .clear-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    button {
+      border: 1px solid $btn-border-color;
+      span {
+        color: $font-color-1;
+      }
+    }
+  }
+}
+
+// 页头提示信息
+.remind {
+  width: 100%;
+  background: $bg-color-1;
+  font-size: 26px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: $font-color-1;
+  line-height: 26px;
+}
+
+// 协议
+/deep/.protocol-link-wrapper {
+  padding: 12px 35px 0 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  .protocol-select-btn {
+    .ivu-checkbox-inner {
+      border-color: $btn-border-color;
+    }
+    .ivu-checkbox-checked .ivu-checkbox-inner {
+      background-color: $btn-bg-color;
+    }
+  }
+  .agree {
+    font-size: 26px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: $font-color-2;
+  }
+  .protocol {
+    font-size: 26px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: $font-color-1;
+  }
+}
+
+// 表单
+/deep/.common-from {
+  .ivu-form-item {
+    padding-top: 20px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid $border-color-1;
+    padding-bottom: 12px;
+    .ivu-form-item-label {
+      font-size: 30px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: $default-font-color;
+      padding-left: 26px;
+    }
+    .ivu-form-item-label:before {
+      content: '';
+      width: 0;
+      margin-right: 0;
+    }
+    .ivu-input.ivu-input-default {
+      text-align: right;
+      padding-right: 26px;
+      font-size: 30px !important;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: $default-font-color;
+      border: none;
+    }
+    .ivu-input-disabled {
+      color: $font-color-3 !important;
+      font-size: 30px !important;
+      background: $white;
+    }
+    .ivu-form-item-error-tip {
+      padding-top: 0;
+      color: $font-color-1;
+      font-weight: 400;
+      right: 26px;
+      text-align: right;
+      z-index: 0;
+      margin-top: 12px;
+    }
+  }
+}
+
+.notice {
+  margin: 12px 24px;
+  padding-top: 12px;
+  font-size: 26px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  line-height: 37px;
+  color: $font-color-1;
+  i {
+    font-size: 30px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-weight: 500;
+  }
+}

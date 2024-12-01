@@ -1,0 +1,91 @@
+// 所有的字体默认都是24px 按钮的默认是26px
+
+// 表单
+.ivu-form {
+  .ivu-form-item {
+    height: 80px;
+    .ivu-form-item-label {
+      height: 100%;
+      font-size: 26px;
+      padding: 0 18px 0 0;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+    }
+    .ivu-form-item-content {
+      height: 100%;
+      line-height: unset;
+      font-size: 26px;
+      .ivu-input-group {
+        top: unset;
+        font-size: 26px;
+      }
+      .ivu-input-wrapper {
+        height: 100%;
+        .ivu-input-inner-container {
+          height: 100%;
+          .ivu-input {
+            height: 100%;
+            font-size: 26px;
+          }
+        }
+        .ivu-input-group-append {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+.ivu-form-item-error-tip {
+  line-height: unset;
+  z-index: 10000;
+}
+.ivu-btn {
+  font-size: 28px;
+  font-weight: 500;
+  span {
+    vertical-align: unset;
+  }
+}
+
+// 下拉
+/deep/.ivu-select {
+  font-size: 26px;
+  height: 100%;
+  .ivu-select-selection {
+    height: 100%;
+    div {
+      height: 100%;
+    }
+    .ivu-select-selected-value {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+    }
+    .ivu-select-placeholder {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+    }
+  }
+  .ivu-select-dropdown {
+    .ivu-select-dropdown-list {
+      .ivu-select-item {
+        font-size: 24px !important;
+      }
+    }
+  }
+}
+
+/deep/.ivu-input {
+  height: 100%;
+  font-size: 24px;
+}
+
+.ivu-icon.ivu-icon-md-expand::before {
+  font-family: Ionicons;
+  // font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans SC', 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica,
+  //   'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+}

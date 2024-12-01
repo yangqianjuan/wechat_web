@@ -1,0 +1,105 @@
+@mixin property-dpr($name, $px) {
+  #{$name}: $px * 1px;
+  [data-dpr="2"] & {
+    #{$name}: $px*2*1px;
+  }
+  [data-dpr="3"] & {
+    #{$name}: $px*3*1px;
+  }
+}
+
+@mixin property-dpr-important($name, $px) {
+  #{$name}: $px * 1px!important;
+  [data-dpr="2"] & {
+    #{$name}: $px*2*1px!important;
+  }
+  [data-dpr="3"] & {
+    #{$name}: $px*3*1px!important;
+  }
+}
+@mixin bg-dpr($bg, $type) {
+  background-image: url($bg+'.'+$type);
+  [data-dpr="2"] & {
+    background-image: url($bg+'@2x.'+$type);
+  }
+  [data-dpr="3"] & {
+    background-image: url($bg+'@3x.'+$type);
+  }
+}
+
+@mixin padding-dpr($t, $r, $d, $l) {
+  padding: $t*1px $r*1px $d*1px $l*1px;
+  [data-dpr="2"] & {
+    padding: $t*2*1px $r*2*1px $d*2*1px $l*2*1px;
+  }
+  [data-dpr="3"] & {
+    padding: $t*3*1px $r*3*1px $d*3*1px $l*3*1px;
+  }
+}
+@mixin margin-dpr($t, $r, $d, $l) {
+  margin: $t*1px $r*1px $d*1px $l*1px;
+  [data-dpr="2"] & {
+    margin: $t*2*1px $r*2*1px $d*2*1px $l*2*1px;
+  }
+  [data-dpr="3"] & {
+    margin: $t*3*1px $r*3*1px $d*3*1px $l*3*1px;
+  }
+}
+@mixin border-radius-dpr($t, $r, $d, $l) {
+  border-radius: $t*1px $r*1px $d*1px $l*1px;
+  [data-dpr="2"] & {
+    border-radius: $t*2*1px $r*2*1px $d*2*1px $l*2*1px;
+  }
+  [data-dpr="3"] & {
+    border-radius: $t*3*1px $r*3*1px $d*3*1px $l*3*1px;
+  }
+}
+@mixin border-dpr($p, $color) {
+  border: $p*1px solid $color;
+  [data-dpr="2"] & {
+    border: $p*2*1px solid $color;
+  }
+  [data-dpr="3"] & {
+    border: $p*3*1px solid $color;
+  }
+}
+.clearfloat:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+@mixin base-dpr ($size, $color, $letter, $lineheight) {
+  @include property-dpr(font-size, $size);
+  color: $color;
+  @include property-dpr(letter-spacing, $letter);
+  @include property-dpr(line-height, $lineheight);
+}
+
+@mixin bg-size($width, $height) {
+  background-size: $width*1px $height*1px;
+  [data-dpr="2"] & {
+    background-size: $width*2px $height*2px;
+  }
+  [data-dpr="3"] & {
+    background-size: $width*3px $height*3px;
+  }
+}
+
+@mixin overflow-elp {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin shadow($x, $y, $sp, $color) {
+  box-shadow: $x*1px $y*1px $sp*1px $color;
+  [dara-dpr="2"] & {
+    box-shadow: $x*2px $y*2px $sp*2px $color;
+  }
+  [data-dpr="3"] & {
+    box-shadow: $x*3px $y*3px $sp*3px $color;
+  }
+}

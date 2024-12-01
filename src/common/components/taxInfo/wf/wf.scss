@@ -1,0 +1,60 @@
+.tax-wf-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .status-icon {
+    margin-top: 9vh;
+    height: 8rem;
+  }
+  .login-status {
+    margin-top: 50px;
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+  }
+  .sub-btn {
+    width: 80%;
+    margin-bottom: 18px;
+    position: fixed;
+    bottom: 8vh;
+  }
+  /deep/.refresh {
+    bottom: 18vh;
+    background-color: #fff;
+    /deep/ span {
+      color: #333 !important;
+    }
+  }
+}
+/deep/.van-empty {
+  .van-empty__description {
+    text-indent: 2em;
+    letter-spacing: 2px !important;
+    line-height: 26px;
+  }
+}
+
+.protocol-link-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 650px;
+  bottom: 30vh;
+  .agree-text {
+    color: #999999;
+  }
+  .protocol-select-btn {
+    margin-right: 0.25rem;
+  }
+  .protocol {
+    color: #1b6ffb;
+  }
+}
+.login-success {
+  /deep/.van-empty__image {
+    width: 180px;
+    height: 180px;
+  }
+}

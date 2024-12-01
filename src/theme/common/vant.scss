@@ -1,0 +1,429 @@
+/*
+ * @Author: hsf
+ * @Date: 2023-06-08 21:46:11
+ * @LastEditors: hsf
+ * @LastEditTime: 2023-08-04 16:20:23
+ * @Description:
+ */
+.reset-form {
+  /deep/ .van-form {
+    .van-field {
+      .van-field__label {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-size: 28px;
+          font-weight: 500;
+          white-space: nowrap;
+          vertical-align: middle;
+          color: #333333;
+        }
+      }
+
+      .van-field__value {
+        .van-field__body {
+          .van-field__control {
+            font-size: 28px;
+            font-weight: 500;
+            color: #333333;
+          }
+
+          .van-field__right-icon {
+            .van-icon {
+              font-size: 45px;
+            }
+          }
+        }
+      }
+
+      .van-field__error-message {
+        position: absolute;
+        bottom: -30px;
+      }
+    }
+
+    .van-field--error {
+      margin-bottom: 20px;
+    }
+
+    .van-cell::after {
+      border-bottom: 1px solid #d8d8d8;
+    }
+
+    .van-cell--borderless::after,
+    .van-cell:last-child::after {
+      display: block;
+    }
+
+    .van-field__error-message {
+      font-weight: 500;
+      position: relative;
+      z-index: 1000;
+      bottom: -6px;
+    }
+
+    .van-field--error .van-field__control,
+    .van-field--error .van-field__control::placeholder {
+      color: #969799;
+    }
+  }
+}
+
+// 底部按钮的样式
+/deep/ .foot-operate-btn.van-button {
+  .van-button__content {
+    .van-button__text {
+      font-size: 30px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  }
+}
+
+/deep/ .foot-operate-btn.van-button--primary {
+  border-radius: 5px;
+  background-color: #2d8cf0 !important;
+  border: 1px solid #2d8cf0 !important;
+}
+
+.btn-foot-fixed {
+  width: 80%;
+  position: fixed;
+  bottom: 50px;
+  right: 10%;
+}
+
+// 头部提示
+.remind {
+  font-size: 22px;
+  padding: 22px 0 22px 25px;
+  background-color: #f0f4ff;
+  font-weight: 500;
+  color: #868686;
+}
+
+/deep/ .self-cell.van-cell {
+  .van-cell__title {
+    span {
+      white-space: nowrap;
+      font-size: 28px;
+      font-weight: 500;
+      white-space: nowrap;
+      color: #333333;
+    }
+  }
+
+  .van-cell__right-icon {
+    font-size: 36px;
+    margin-left: 12px;
+    padding-top: 6px;
+  }
+
+  .van-cell__value {
+    span {
+      white-space: nowrap;
+      font-size: 28px;
+      font-weight: 500;
+      white-space: nowrap;
+      color: #333333;
+    }
+  }
+}
+
+/deep/ .self-popup.van-popup {
+  .van-action-sheet__description {
+    font-size: 32px;
+    font-weight: 500;
+    border-bottom: 1px solid #e9eaec;
+  }
+
+  .van-action-sheet__content {
+    .van-action-sheet__item {
+      width: 90%;
+      margin-left: 5%;
+      border-bottom: 1px solid #e9eaec;
+
+      span {
+        font-size: 28px;
+        font-weight: 500;
+        color: #333333;
+      }
+    }
+  }
+
+  .van-action-sheet__cancel {
+    font-size: 34px;
+    font-weight: 500;
+  }
+}
+
+.van-notify {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.van-dialog {
+  .van-dialog__header {
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 20px;
+    border-bottom: 1px solid #dedede;
+  }
+
+  .van-dialog__content {
+    .van-dialog__message {
+      padding: 30px 20px;
+      color: #333;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    border-bottom: 1px solid #dedede;
+  }
+
+  .van-dialog__footer {
+    .van-dialog__cancel {
+      border-right: 1px solid #dedede;
+
+      .van-button__content {
+        span {
+          font-size: 28px;
+          color: #333;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .van-dialog__confirm {
+      .van-button__content {
+        span {
+          font-size: 28px;
+          color: #3552d0;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+// 人脸识别错误弹框提示
+.van-dialog.face-error-dialog {
+  background-image: url("~@/assets/imgs/face_bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 612px;
+  height: 541px;
+  background-color: unset;
+
+  .van-dialog__message {
+    padding: unset !important;
+  }
+
+  .face-content {
+    width: 100%;
+
+    .title {
+      width: 100%;
+      text-align: center;
+      margin-top: 242px;
+      font-size: 48px !important;
+      font-family: PingFangSC, PingFangSC-Semibold !important;
+      font-weight: 600 !important;
+      color: #181652 !important;
+    }
+
+    .desc {
+      width: 100%;
+      margin-top: 26px !important;
+      text-align: center;
+      font-size: 28px !important;
+      font-family: PingFangSC, PingFangSC-Regular !important;
+      font-weight: 400 !important;
+      color: #141245 !important;
+      padding: 0 30px;
+      max-height: 34px;
+      overflow: auto;
+    }
+  }
+
+  .van-dialog__content {
+    border: unset !important;
+  }
+
+  .van-hairline--top::after {
+    border-top-width: 0 !important;
+  }
+
+  .van-hairline--top {
+    ::after {
+      border: unset !important;
+    }
+  }
+
+  .van-dialog__footer {
+    margin-top: 64px;
+    padding: 0 50px !important;
+
+    ::after {
+      border: unset !important;
+    }
+
+    .van-button--default {
+      background-color: unset;
+    }
+
+    .van-dialog__cancel {
+      width: 248px !important;
+      height: 80px !important;
+      border: 2px solid #17154f !important;
+      border-radius: 45px !important;
+
+      .van-button__content {
+        .van-button__text {
+          font-size: 28px !important;
+          font-family: PingFangSC, PingFangSC-Medium !important;
+          font-weight: 500 !important;
+          text-align: center;
+          color: #1a1758 !important;
+          line-height: 80px !important;
+        }
+      }
+    }
+
+    .van-dialog__confirm {
+      margin-left: 16px;
+      width: 248px !important;
+      height: 80px !important;
+      background: #3b77ff !important;
+      border-radius: 45px !important;
+
+      .van-button__content {
+        .van-button__text {
+          font-size: 28px !important;
+          font-family: PingFangSC, PingFangSC-Medium !important;
+          font-weight: 500 !important;
+          text-align: center !important;
+          color: #ffffff !important;
+          line-height: 80px !important;
+        }
+      }
+    }
+  }
+}
+
+//北京银行弹窗样式
+.van-dialog.beijingBank {
+  width: 590px;
+  padding-bottom: 40px;
+  background: #ffffff;
+  z-index: 20000002 !important;
+
+  .van-dialog__message {
+    padding: unset !important;
+  }
+
+  .face-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .topImg {
+      width: 280px;
+      height: 190px;
+      margin-top: 48px;
+    }
+
+    .desc {
+      font-size: 32px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #2b0e0c;
+      margin-top: 20px;
+      text-align: center;
+      // white-space: nowrap;
+      padding: 0 12px;
+    }
+
+    .tip {
+      width: 450px;
+      font-size: 24px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #8f8b8a;
+      margin-top: 24px;
+      text-align: center;
+    }
+  }
+
+  .van-dialog__content {
+    border: unset !important;
+  }
+
+  .van-hairline--top::after {
+    border-top-width: 0 !important;
+  }
+
+  .van-hairline--top {
+    ::after {
+      border: unset !important;
+    }
+  }
+
+  .van-dialog__footer {
+    margin-top: 44px !important;
+    padding: 0 50px !important;
+
+    ::after {
+      border: unset !important;
+    }
+
+    .van-button--default {
+      background-color: unset;
+    }
+
+    .van-dialog__cancel {
+      width: 248px !important;
+      height: 80px !important;
+      border: 1px solid #17154f !important;
+      border-radius: 45px !important;
+      margin-right: 16px;
+
+      .van-button__content {
+        .van-button__text {
+          font-size: 28px !important;
+          font-family: PingFangSC, PingFangSC-Medium !important;
+          font-weight: 500 !important;
+          text-align: center;
+          color: #1a1758 !important;
+          line-height: 80px !important;
+        }
+      }
+    }
+
+    .van-dialog__confirm {
+      display: flex;
+      justify-content: center;
+
+      .van-button__content {
+        width: 248px !important;
+        height: 80px !important;
+        background: linear-gradient(129deg, #cd1101 0%, #a70500 100%);
+        border-radius: 45px;
+
+        .van-button__text {
+          font-size: 28px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #ffffff;
+          line-height: 80px !important;
+        }
+      }
+    }
+  }
+}
+
+.van-toast.read-protocol {
+  z-index: 100000000000 !important;
+}

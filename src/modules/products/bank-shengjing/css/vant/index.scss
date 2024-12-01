@@ -1,0 +1,11 @@
+.beijing-protocol {
+  .van-button {
+    background: #f9f5f5 linear-gradient(129deg, #cd1101 0%, #a70500 100%);
+  }
+  .van-checkbox__icon--checked .van-icon {
+    background-color: #9f0400;
+    border-color: #9f0400;
+  }
+}
+
+@import './form.scss';
