@@ -33,7 +33,7 @@
 
     <!-- pdf格式 -->
     <div v-if="isPdf && !loadingStatus && !isShowDoc" class="new-pdf-wrapper">
-      <pdf ref="pdf" :src="src" v-for="i in numPages" :key="i" :page="i"></pdf>
+      <pdf ref="pdf" :source="src" v-for="i in numPages" :key="i" :page="i"></pdf>
     </div>
 
     <!-- word 格式 -->
@@ -54,9 +54,9 @@
   </div>
 </template>
 <script>
-import pdf from 'vue-pdf';
+import pdf from 'vue-pdf-embed';
 // 解决部分文字不显示的问题
-import CMapReaderFactory from 'vue-pdf/src/CMapReaderFactory.js';
+// import CMapReaderFactory from 'vue-pdf-embed/src/CMapReaderFactory.js';
 
 let docx = require('docx-preview');
 
@@ -143,14 +143,9 @@ export default {
           if (newVal && this.isPdf) {
             if (newVal.indexOf('JVBERi0xL') !== -1) {
               // let pdfData = 'data:application/pdf;base64,' + newVal;
-              this.src = pdf.createLoadingTask({
-                // url: pdfData,
-                data: window.atob(newVal),
-                CMapReaderFactory,
-                withCredentials: false
-              });
+              this.src = newVal;
             } else {
-              this.src = pdf.createLoadingTask(newVal);
+              this.src = newVal;
             }
             this.src.promise.then(pdf => {
               this.numPages = pdf.numPages;

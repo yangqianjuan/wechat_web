@@ -7,7 +7,7 @@
   </div>
 </template>
 <script>
-import pdf from 'vue-pdf';
+import pdf from 'vue-pdf-embed';
 import { guaranteeContractAddress } from '@/request/interface/impower/Bank';
 export default {
   /**
