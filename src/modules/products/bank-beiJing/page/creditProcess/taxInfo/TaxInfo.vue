@@ -216,7 +216,7 @@ export default {
     .operate-auth {
       margin-top: 64px;
 
-      /deep/ .btn {
+      ::v-deep .btn {
         border: unset !important;
         width: 320px;
         height: 88px;

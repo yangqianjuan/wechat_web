@@ -204,7 +204,7 @@ export default {
   .card-add {
     width: 675px;
     margin-top: 30px;
-    /deep/.ivu-form-item {
+    ::v-deep(.ivu-form-item){
       height: 110px;
       display: flex;
       align-items: center;
@@ -265,7 +265,7 @@ export default {
         }
       }
     }
-    /deep/.ivu-select-selection {
+    ::v-deep(.ivu-select-selection) {
       //   height: 100%;
       .ivu-select-placeholder {
         border: 0;

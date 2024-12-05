@@ -251,7 +251,7 @@ export default {
   font-size: 26px;
   font-weight: 500;
 }
-/deep/.model-wrapper {
+::v-deep(.model-wrapper) {
   .title-warpper {
     display: flex;
     justify-content: center;

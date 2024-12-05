@@ -28,8 +28,8 @@
     <div class="foot-content">
       <!-- account - module -->
       <div class="account-bank">
-        <template v-for="(item, index) in accountList">
-          <div class="option" :key="index" @click="jumpSearchHandler(item.type)">
+        <template v-for="(item, index) in accountList" >
+          <div class="option"  @click="jumpSearchHandler(item.type)" :key="index">
             <div class="left">{{ item.txt }}</div>
             <div class="right">
               <img src="../../static/image/home/right-icon.png" alt="" />
@@ -40,8 +40,8 @@
 
       <!-- borrow info raw -->
       <div class="records">
-        <template v-for="(item, index) in recordList">
-          <div class="option" :key="index" @click="jumpSearchHandler(item.type)">
+        <template v-for="(item, index) in recordList" >
+          <div class="option"  @click="jumpSearchHandler(item.type)" :key="index">
             <div class="left">{{ item.txt }}</div>
             <div class="right">
               <img src="../../static/image/home/right-icon.png" alt="" />
@@ -587,7 +587,7 @@ export default {
     .operate {
       margin-top: 36px;
 
-      /deep/ .btn {
+      ::v-deep .btn {
         border: unset !important;
         width: 606px;
         height: 88px;

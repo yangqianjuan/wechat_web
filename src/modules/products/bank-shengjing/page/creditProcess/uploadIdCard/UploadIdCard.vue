@@ -669,11 +669,11 @@ export default {
     border-radius: 16px;
     margin-top: 32px;
 
-    /deep/ .van-field__label {
+    ::v-deep .van-field__label {
       color: #c8c9cc;
     }
 
-    /deep/ .van-field--disabled {
+    ::v-deep .van-field--disabled {
       .van-field__body .van-field__control {
         // color: #c8c9cc !important;
         color: #8f8b8a !important;
@@ -688,12 +688,12 @@ export default {
     border-radius: 16px;
     margin-top: 32px;
 
-    /deep/ .van-field__label {
+    ::v-deep .van-field__label {
       color: #c8c9cc;
     }
 
     .changeNumber {
-      /deep/ .van-button__text {
+      ::v-deep .van-button__text {
         font-size: 28px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
@@ -726,7 +726,7 @@ export default {
     }
 
     .phone__input--disabled {
-      /deep/ input {
+      ::v-deep input {
         font-size: 28px !important;
         font-family: PingFangSC-Regular, PingFang SC !important;
         font-weight: 400 !important;
@@ -737,7 +737,7 @@ export default {
     // sms code status
     .sms__input--normal {
       .changeNumber {
-        /deep/ .van-button {
+        ::v-deep .van-button {
           width: 192px;
           height: 64px;
           background: #f9f5f5 linear-gradient(129deg, #cd1101 0%, #a70500 100%);
@@ -809,7 +809,7 @@ export default {
       margin: 0 auto;
       margin-top: 24px;
 
-      /deep/ .van-button__text {
+      ::v-deep .van-button__text {
         font-size: 28px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
@@ -818,7 +818,7 @@ export default {
     }
   }
 
-  /deep/ .van-field__control {
+  ::v-deep .van-field__control {
     font-size: 28px !important;
     font-family: PingFangSC-Medium, PingFang SC !important;
     font-weight: 500 !important;
@@ -828,7 +828,7 @@ export default {
   }
 
   .modify-phone {
-    /deep/ .van-dialog {
+    ::v-deep .van-dialog {
       .van-dialog__header {
         padding-top: 48px;
         font-size: 32px;

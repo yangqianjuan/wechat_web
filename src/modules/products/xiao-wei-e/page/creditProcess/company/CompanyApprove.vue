@@ -603,7 +603,7 @@ export default {
   flex-direction: column;
   justify-content: center;
 }
-/deep/.area-self {
+::v-deep(.area-self) {
   .van-cell {
     padding: 0;
     .van-cell__title {
@@ -661,7 +661,7 @@ export default {
   margin-bottom: 60px;
   border: 1px solid #d8d8d8;
   // z-index: -1;
-  /deep/.van-button__text {
+  ::v-deep(.van-button__text) {
     color: #333 !important;
   }
 }
@@ -712,7 +712,7 @@ export default {
     color: #1b6ffb;
   }
 }
-/deep/.van-area {
+::v-deep(.van-area) {
   .van-picker__toolbar {
     padding: 16px 12px;
     .van-picker__cancel {
@@ -740,7 +740,7 @@ export default {
   }
 }
 .error-msg {
-  /deep/.van-field__error-message {
+  ::v-deep(.van-field__error-message) {
     margin-left: 130px;
   }
 }

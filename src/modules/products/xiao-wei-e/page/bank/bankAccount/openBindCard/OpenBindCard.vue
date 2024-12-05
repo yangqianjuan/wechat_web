@@ -582,7 +582,7 @@ export default {
   right: 10%;
 }
 .bank-name {
-  /deep/.van-cell {
+  ::v-deep(.van-cell) {
     padding: 0;
   }
   .van-cell::after {
@@ -633,7 +633,7 @@ export default {
 }
 .bind-bank-card-wrapper .ivu-form-item {
   margin-bottom: 40px;
-  /deep/.ivu-form-item-error-tip {
+  ::v-deep(.ivu-form-item-error-tip) {
     padding-top: 0px;
   }
 }
@@ -645,7 +645,7 @@ export default {
   padding-left: 1.25rem;
 }
 .error-msg {
-  /deep/.van-field__error-message {
+  ::v-deep(.van-field__error-message) {
     margin-left: 170px;
   }
 }

@@ -153,28 +153,28 @@ export default {
 .ivu-input-inner-container {
   border: none;
 }
-/deep/.ivu-modal {
+::v-deep(.ivu-modal) {
   margin: 0 1.25rem;
 }
-/deep/.ivu-input {
+::v-deep(.ivu-input) {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid #edf1f5;
   padding: 0 4px;
 }
-/deep/.ivu-input-group-append {
+::v-deep(.ivu-input-group-append) {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid #edf1f5;
   background: #ffffff;
 }
-/deep/.ivu-modal-header {
+::v-deep(.ivu-modal-header) {
   border: 0;
 }
-/deep/.ivu-modal-footer {
+::v-deep(.ivu-modal-footer) {
   border-top: 0;
 }
-/deep/.ivu-modal-footer {
+::v-deep(.ivu-modal-footer) {
   padding: 0 1rem;
 }
 </style>

@@ -103,7 +103,7 @@ export default {
       height: 80px;
       margin-top: 40px;
       background: #f7f8f9;
-      /deep/.van-field__left-icon {
+      ::v-deep(.van-field__left-icon) {
         margin-right: 30px;
         margin-top: 4px;
       }

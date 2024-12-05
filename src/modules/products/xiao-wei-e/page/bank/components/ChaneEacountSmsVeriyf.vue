@@ -9,7 +9,7 @@
     >
       <div class="reset-form sms-form">
         <van-form validate-first ref="formDynamic">
-          <van-field v-model="phoneNum" name="phoneNum" required disabled label="预留手机号" placeholder="请输入银行预留手机号" />
+          <van-field v-model='phoneNum' name="phoneNum" required disabled label="预留手机号" placeholder="请输入银行预留手机号" />
           <van-field
             v-model="formItem.smsCode"
             name="smsCode"
@@ -39,10 +39,10 @@ export default {
       type: Boolean,
       default: false
     },
-    phoneNum: {
-      type: String,
-      default: ''
-    }
+    // phoneNum: {
+    //   type: String,
+    //   default: ''
+    // }
   },
   data() {
     // 验证码校验函数
@@ -157,28 +157,28 @@ export default {
 .ivu-input-inner-container {
   border: none;
 }
-/deep/.ivu-modal {
+::v-deep(.ivu-modal) {
   margin: 0 1.25rem;
 }
-/deep/.ivu-input {
+::v-deep(.ivu-input) {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid #edf1f5;
   padding: 0 4px;
 }
-/deep/.ivu-input-group-append {
+::v-deep(.ivu-input-group-append) {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid #edf1f5;
   background: #ffffff;
 }
-/deep/.ivu-modal-header {
+::v-deep(.ivu-modal-header) {
   border: 0;
 }
-/deep/.ivu-modal-footer {
+::v-deep(.ivu-modal-footer) {
   border-top: 0;
 }
-/deep/.ivu-modal-footer {
+::v-deep(.ivu-modal-footer) {
   padding: 0 1rem;
 }
 .sms-form {

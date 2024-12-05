@@ -523,14 +523,14 @@ export default {
   border: none;
   outline: none;
 
-  /deep/.van-field__control {
+  ::v-deep(.van-field__control) {
     font-size: 28px;
     direction: rtl;
     color: #333333;
     font-weight: 500;
   }
 }
-/deep/.selectAddress select {
+::v-deep(.selectAddress) select {
   -webkit-appearance: none;
   height: 30px;
   width: 100%;
@@ -546,7 +546,7 @@ export default {
   color: #7f7f7f;
   overflow: auto;
 }
-/deep/.selectAddress option {
+::v-deep(.selectAddress) option {
   height: 30px;
   border: 1px solid #dcdee2;
   border-radius: 4px;
@@ -566,7 +566,7 @@ export default {
 .two-professional {
   border-bottom: 1px solid #d8d8d8;
 }
-/deep/.van-cell {
+::v-deep(.van-cell) {
   .van-cell__title {
     span {
       white-space: nowrap;
@@ -591,7 +591,7 @@ export default {
     }
   }
 }
-/deep/.van-popup {
+::v-deep(.van-popup) {
   .van-action-sheet__description {
     font-size: 32px;
     font-weight: 500;
@@ -614,7 +614,7 @@ export default {
     font-weight: 500;
   }
 }
-/deep/.van-area {
+::v-deep(.van-area) {
   .van-picker__toolbar {
     padding: 16px 12px;
     .van-picker__cancel {
@@ -641,10 +641,10 @@ export default {
     }
   }
 }
-/deep/.van-icon-location {
+::v-deep(.van-icon-location) {
   font-size: 36px;
 }
-/deep/.van-dialog {
+::v-deep(.van-dialog) {
   .van-dialog__content {
     padding: 50px 0;
   }

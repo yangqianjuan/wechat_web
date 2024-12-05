@@ -104,7 +104,7 @@ export default {
     }
   }
 }
-/deep/.van-icon {
+::v-deep(.van-icon) {
   font-size: 80px;
   margin-top: 14px;
 }

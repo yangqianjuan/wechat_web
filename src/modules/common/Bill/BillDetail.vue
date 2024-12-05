@@ -159,7 +159,7 @@ export default {
   align-items: center;
   justify-content: center;
   // background-color: #ffff;
-  /deep/.detail-btn {
+  ::v-deep(.detail-btn) {
     width: 86vw;
     height: 75px;
     span {

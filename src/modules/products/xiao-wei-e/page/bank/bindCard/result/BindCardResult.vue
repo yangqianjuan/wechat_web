@@ -88,7 +88,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .login-success {
-  /deep/.van-empty__image {
+  ::v-deep(.van-empty__image) {
     width: 180px;
     height: 180px;
   }
@@ -138,7 +138,7 @@ export default {
   margin-top: 30px;
   // box-shadow: -2px 2px 5px 2px rgba(27, 111, 251, 0.26);
 }
-/deep/.refresh {
+::v-deep(.refresh) {
   margin-top: 60px;
   background-color: #fff !important;
   box-shadow: unset !important;

@@ -492,7 +492,7 @@ export default {
   bottom: -0.9375rem;
   color: #ed4014;
 }
-/deep/.selectAddress select {
+::v-deep(.selectAddress) select {
   -webkit-appearance: none;
   height: 30px;
   width: 110px;
@@ -506,7 +506,7 @@ export default {
   background: #ffffff;
   color: #7f7f7f;
 }
-/deep/.selectAddress option {
+::v-deep(.selectAddress) option {
   height: 30px;
   border: 1px solid #dcdee2;
   border-radius: 4px;
@@ -612,24 +612,24 @@ export default {
 //   position: fixed;
 //   height: 100vh;
 // }
-/deep/.ivu-form-item-label:before {
+::v-deep(.ivu-form-item-label:before) {
   content: '';
 }
-/deep/.ivu-input {
+::v-deep(.ivu-input) {
   border: none;
   padding: 0;
 }
-/deep/.ivu-form-item {
+::v-deep(.ivu-form-item) {
   margin-bottom: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.8125rem;
   border-bottom: 1px solid #eadfdf;
   padding-left: 1.25rem;
 }
-/deep/.ivu-form-item-error-tip {
+::v-deep(.ivu-form-item-error-tip) {
   padding-top: 0;
 }
-/deep/.ivu-input[disabled] {
+::v-deep(.ivu-input[disabled]) {
   background: #ffffff;
 }
 .proptocol {

@@ -339,7 +339,7 @@ export default {
 }
 .bind-bank-card-wrapper .ivu-form-item {
   margin-bottom: 46px;
-  /deep/.ivu-form-item-error-tip {
+  ::v-deep(.ivu-form-item-error-tip) {
     padding-top: 0;
     z-index: 100;
   }

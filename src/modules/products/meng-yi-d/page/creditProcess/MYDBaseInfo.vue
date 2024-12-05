@@ -243,7 +243,7 @@ export default {
     }
   }
 
-  /deep/.selectAddress select {
+  ::v-deep(.selectAddress select) {
     -webkit-appearance: none;
     width: 100%;
     min-width: 4.375rem;
@@ -259,7 +259,7 @@ export default {
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
   }
-  /deep/.selectAddress option {
+  ::v-deep(.selectAddress option) {
     height: 32px;
     border: 1px solid $border-color-1;
     border-radius: 4px;

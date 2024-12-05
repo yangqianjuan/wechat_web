@@ -397,17 +397,17 @@ export default {
     color: #1b6ffb;
   }
 }
-/deep/.ivu-input {
+::v-deep(.ivu-input) {
   border: none;
   height: 1.125rem;
   padding: 0;
 }
-/deep/.ivu-form-item {
+::v-deep(.ivu-form-item) {
   margin-bottom: 0;
   border-bottom: 1px solid #eadfdf;
   padding-left: 1.25rem;
 }
-/deep/.ivu-input[disabled] {
+::v-deep(.ivu-input[disabled]) {
   background: #ffffff;
 }
 </style>

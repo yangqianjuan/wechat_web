@@ -283,7 +283,7 @@ export default {
     height: 0.5px;
     background-color: #d8d8d8;
   }
-  /deep/.van-step__circle-container {
+  ::v-deep(.van-step__circle-container) {
     .van-step__circle {
       width: 30px;
       height: 30px;
@@ -296,11 +296,11 @@ export default {
       font-size: 62px;
     }
   }
-  /deep/.van-steps__items {
+  :v-deep(.van-steps__items) {
     height: 100%;
   }
   // 未激活,
-  /deep/.van-step .van-step__title {
+  ::v-deep(.van-step .van-step__title) {
     div {
       font-size: 26px !important;
       font-weight: 400;
@@ -308,7 +308,7 @@ export default {
     }
   }
   // 结束
-  /deep/.van-step--finish {
+  ::v-deep(.van-step--finish) {
     .van-step__title {
       margin-bottom: 54px;
       div {
@@ -320,7 +320,7 @@ export default {
     }
   }
   // 激活
-  /deep/.van-step--process {
+  ::v-deep(.van-step--process) {
     .van-step__title--active {
       div {
         font-size: 33px !important;
@@ -330,23 +330,23 @@ export default {
       }
     }
   }
-  /deep/.van-step--vertical:not(:last-child)::after {
+  ::v-deep(.van-step--vertical:not(:last-child)::after) {
     border-bottom-width: 0;
   }
-  /deep/.van-step--finish .van-step__line {
+  ::v-deep(.van-step--finish) .van-step__line {
     background-color: unset !important;
     border-left: 1px dashed #3552d0 !important;
     width: 1.5px;
   }
-  /deep/.van-step--process .van-step__line {
+  ::v-deep(.van-step--process) .van-step__line {
     background-color: unset !important;
     border-left: 1px dashed rgb(187, 187, 187) !important;
     width: 1.5px;
   }
-  /deep/.van-step:last-child .van-step__line {
+  ::v-deep(.van-step:last-child) .van-step__line {
     display: none;
   }
-  /deep/.van-step__line {
+  ::v-deep(.van-step__line) {
     height: 93% !important;
   }
 }

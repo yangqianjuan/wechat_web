@@ -328,7 +328,7 @@ export default {
       border-radius: 44px;
       background-color: #fff;
 
-      /deep/ .van-button__text {
+      ::v-deep .van-button__text {
         font-size: 28px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;

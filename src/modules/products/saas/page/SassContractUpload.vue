@@ -284,25 +284,25 @@ export default {
     color: #1b6ffb;
   }
 }
-/deep/.ivu-form-item-label:before {
+::v-deep(.ivu-form-item-label:before) {
   content: '';
 }
-/deep/.ivu-input {
+::v-deep(.ivu-input) {
   border: none;
   height: 1.125rem;
   padding: 0;
 }
-/deep/.ivu-form-item {
+::v-deep(.ivu-form-item) {
   margin-bottom: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.8125rem;
   border-bottom: 1px solid #eadfdf;
   padding-left: 1.25rem;
 }
-/deep/.ivu-form-item-error-tip {
+::v-deep(.ivu-form-item-error-tip) {
   padding-top: 0;
 }
-/deep/.ivu-input[disabled] {
+::v-deep(.ivu-input[disabled]) {
   background: #ffffff;
 }
 </style>

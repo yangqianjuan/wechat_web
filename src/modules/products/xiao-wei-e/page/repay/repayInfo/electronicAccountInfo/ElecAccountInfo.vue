@@ -120,7 +120,7 @@ export default {
     width: 80%;
     display: flex;
     justify-content: space-between;
-    /deep/.van-button {
+    ::v-deep(.van-button) {
       height: unset;
       border-radius: 5px;
       padding: 12px 0;

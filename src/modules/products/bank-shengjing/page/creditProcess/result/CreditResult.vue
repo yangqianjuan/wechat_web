@@ -281,7 +281,7 @@ export default {
       padding: 0 28px;
       text-indent: 2em;
 
-      /deep/ .fill-product-title {
+      ::v-deep .fill-product-title {
         font-size: 34px;
         font-family: PingFangSC-Medium, PingFang SC;
         color: #a90600;
@@ -292,7 +292,7 @@ export default {
     .operate-auth {
       margin-top: 64px;
 
-      /deep/ .btn {
+      ::v-deep .btn {
         border: unset !important;
         width: 320px;
         height: 88px;

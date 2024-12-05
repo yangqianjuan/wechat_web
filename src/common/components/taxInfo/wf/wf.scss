@@ -20,15 +20,15 @@
     position: fixed;
     bottom: 8vh;
   }
-  /deep/.refresh {
+  ::v-deep(.refresh) {
     bottom: 18vh;
     background-color: #fff;
-    /deep/ span {
+    ::v-deep span {
       color: #333 !important;
     }
   }
 }
-/deep/.van-empty {
+::v-deep(.van-empty) {
   .van-empty__description {
     text-indent: 2em;
     letter-spacing: 2px !important;
@@ -53,7 +53,7 @@
   }
 }
 .login-success {
-  /deep/.van-empty__image {
+  ::v-deep(.van-empty__image) {
     width: 180px;
     height: 180px;
   }

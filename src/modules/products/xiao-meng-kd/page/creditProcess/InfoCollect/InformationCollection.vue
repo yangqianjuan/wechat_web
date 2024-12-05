@@ -370,7 +370,7 @@ export default {
     align-items: center;
   }
 }
-/deep/.ivu-form-item {
+::v-deep(.ivu-form-item) {
   height: 64px !important;
   margin-bottom: 36px !important;
   border-bottom: 1px solid #f7f7f7 !important;
@@ -399,7 +399,7 @@ export default {
     text-align: right;
   }
 }
-/deep/.ivu-select-selection {
+::v-deep(.ivu-select-selection) {
   border: 0 !important;
   .ivu-select-placeholder {
     display: none !important;
@@ -410,7 +410,7 @@ export default {
   }
 }
 
-/deep/.sub-btn {
+::v-deep(.sub-btn) {
   width: 632px;
   height: 96px;
   background: #2781ee;
@@ -478,7 +478,7 @@ export default {
   direction: rtl;
   font-weight: 600;
 }
-/deep/.selectAddress select {
+::v-deep(.selectAddress) select {
   -webkit-appearance: none;
   height: 30px;
   width: 100%;
@@ -494,7 +494,7 @@ export default {
   color: #333 !important;
   overflow: auto;
 }
-/deep/.selectAddress option {
+::v-deep(.selectAddress) option {
   height: 30px;
   border: 1px solid #dcdee2;
   border-radius: 4px;

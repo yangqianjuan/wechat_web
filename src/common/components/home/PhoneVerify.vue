@@ -201,13 +201,13 @@ export default {
     padding-left: 2.4vw;
   }
 }
-/deep/.ivu-modal {
+::v-deep(.ivu-modal) {
   flex: 1 1 80%;
 }
-/deep/.ivu-modal {
+::v-deep(.ivu-modal) {
   margin: 0 1.25rem;
 }
-/deep/.ivu-input {
+::v-deep(.ivu-input) {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid #edf1f5;
@@ -215,22 +215,22 @@ export default {
   padding-left: 4vw;
   font-size: 28px !important;
 }
-/deep/.ivu-form-item-error-tip {
+::v-deep(.ivu-form-item-error-tip) {
   font-size: 28px;
 }
-/deep/.ivu-input-group-append {
+::v-deep(.ivu-input-group-append) {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid #edf1f5;
   background: #ffffff;
 }
-/deep/.ivu-modal-header {
+::v-deep(.ivu-modal-header) {
   border: 0;
 }
-/deep/.ivu-modal-footer {
+::v-deep(.ivu-modal-footer) {
   border-top: 0;
 }
-/deep/.ivu-modal-footer {
+::v-deep(.ivu-modal-footer) {
   padding: 0 1rem;
 }
 </style>

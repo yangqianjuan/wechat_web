@@ -271,7 +271,7 @@ export default {
         font-weight: 600;
       }
 
-      /deep/ .loans-btn {
+      ::v-deep .loans-btn {
         width: 80%;
         margin-top: 35px;
         background-color: #2d8cf0 !important;
@@ -347,7 +347,7 @@ export default {
     padding: 4px 0;
     height: unset;
 
-    /deep/ .van-button__content {
+    ::v-deep .van-button__content {
       padding: 12px 0;
     }
   }

@@ -192,7 +192,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  /deep/.detail-btn {
+  ::v-deep(.detail-btn) {
     width: 86vw;
     height: 75px;
     span {

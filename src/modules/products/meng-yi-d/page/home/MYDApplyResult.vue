@@ -156,7 +156,7 @@ export default {
       padding: 4px 0;
       height: unset;
 
-      /deep/ .van-button__content {
+      ::v-deep .van-button__content {
         background: $btn-bg-color;
         padding: 12px 0;
       }

@@ -240,7 +240,7 @@ export default {
     height: 100%;
     min-height: 100vh;
 
-    /deep/ button {
+    ::v-deep button {
       display: none;
     }
   }

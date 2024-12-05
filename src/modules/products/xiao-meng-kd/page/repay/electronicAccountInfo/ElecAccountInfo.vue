@@ -219,7 +219,7 @@ export default {
     }
   }
 }
-/deep/.van-dialog__content {
+::v-deep(.van-dialog__content) {
   height: 50vh !important;
 }
 </style>

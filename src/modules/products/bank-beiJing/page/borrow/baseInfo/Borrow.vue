@@ -806,7 +806,7 @@ export default {
         font-weight: 500;
         color: #df0301;
 
-        /deep/ .van-button__text {
+        ::v-deep .van-button__text {
           font-size: 28px;
           font-family: PingFangSC-Medium, PingFang SC;
           font-weight: 500;
@@ -852,7 +852,7 @@ export default {
             margin-left: 12px;
             font-size: 24px;
 
-            /deep/ .van-button__text {
+            ::v-deep .van-button__text {
               font-family: PingFangSC-Medium, PingFang SC;
               font-weight: 500;
               color: #df0301;
@@ -892,7 +892,7 @@ export default {
       margin: 0 auto;
       margin-top: 24px;
 
-      /deep/ .van-button__text {
+      ::v-deep .van-button__text {
         font-size: 28px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
@@ -982,7 +982,7 @@ export default {
       border-radius: 44px;
       border: 2px solid #a60400;
 
-      /deep/ .van-button__text {
+      ::v-deep .van-button__text {
         font-size: 28px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
@@ -996,7 +996,7 @@ export default {
       background: linear-gradient(129deg, #cd1101 0%, #a70500 100%);
       border-radius: 45px;
 
-      /deep/ .van-button__text {
+      ::v-deep .van-button__text {
         font-size: 28px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
@@ -1324,7 +1324,7 @@ export default {
       background: linear-gradient(129deg, #b80701 0%, #9a0400 100%), linear-gradient(129deg, #cd1101 0%, #a70500 100%);
       border-radius: 45px;
 
-      /deep/ .van-button__text {
+      ::v-deep .van-button__text {
         font-size: 28px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;

@@ -212,7 +212,7 @@ export default {
   .reset-auth {
     border-color: #cecece;
 
-    /deep/ .van-button__text {
+    ::v-deep .van-button__text {
       font-size: 30px;
       font-weight: 500;
       color: #333;
@@ -232,7 +232,7 @@ export default {
   .bg {
     border: 1px solid #d8d8d8;
 
-    /deep/ .van-button__text {
+    ::v-deep .van-button__text {
       color: #333 !important;
       font-size: 28px;
     }

@@ -406,7 +406,7 @@ export default {
 .next-new-btn {
   bottom: 65px;
   background-color: #fff !important;
-  /deep/ span {
+  ::v-deep span {
     color: #333 !important;
   }
 }
@@ -439,7 +439,7 @@ export default {
     padding: 30px;
   }
 }
-/deep/.van-dialog {
+::v-deep(.van-dialog) {
   .van-dialog__header {
     font-size: 30px;
     font-weight: 500;
@@ -496,7 +496,7 @@ export default {
     height: 32px;
   }
 }
-/deep/.van-dialog__content {
+::v-deep(.van-dialog__content) {
   height: 50vh !important;
 }
 </style>

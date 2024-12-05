@@ -141,7 +141,7 @@ export default {
   color: rgba(117, 117, 117, 1);
   margin-left: 8px;
 }
-/deep/ .van-dialog {
+::v-deep .van-dialog {
   border-radius: 0;
   .van-dialog__header {
     padding: 12px 0 !important;

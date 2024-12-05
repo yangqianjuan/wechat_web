@@ -6,7 +6,7 @@
  * @Description:
  */
 .reset-form {
-  /deep/ .van-form {
+  ::v-deep .van-form {
     .van-field {
       .van-field__label {
         display: flex;
@@ -71,7 +71,7 @@
 }
 
 // 底部按钮的样式
-/deep/ .foot-operate-btn.van-button {
+::v-deep .foot-operate-btn.van-button {
   .van-button__content {
     .van-button__text {
       font-size: 30px;
@@ -81,7 +81,7 @@
   }
 }
 
-/deep/ .foot-operate-btn.van-button--primary {
+::v-deep .foot-operate-btn.van-button--primary {
   border-radius: 5px;
   background-color: #2d8cf0 !important;
   border: 1px solid #2d8cf0 !important;
@@ -103,7 +103,7 @@
   color: #868686;
 }
 
-/deep/ .self-cell.van-cell {
+::v-deep .self-cell.van-cell {
   .van-cell__title {
     span {
       white-space: nowrap;
@@ -131,7 +131,7 @@
   }
 }
 
-/deep/ .self-popup.van-popup {
+::v-deep .self-popup.van-popup {
   .van-action-sheet__description {
     font-size: 32px;
     font-weight: 500;
@@ -209,7 +209,7 @@
 
 // 人脸识别错误弹框提示
 .van-dialog.face-error-dialog {
-  background-image: url("~@/assets/imgs/face_bg.png");
+  background-image: url('~@/assets/imgs/face_bg.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 612px;

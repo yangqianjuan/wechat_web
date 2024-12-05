@@ -468,7 +468,7 @@ export default {
     }
   }
 }
-/deep/.van-field__error-message {
+::v-deep(.van-field__error-message) {
   z-index: 10 !important;
 }
 .protocol-link-wrapper {

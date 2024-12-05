@@ -1,7 +1,7 @@
 <template>
   <div class="steps-container">
     <div class="content">
-      <template v-for="(item, index) in stepsList">
+      <template v-for="(item, index) in stepsList" >
         <div class="step-group" :key="index">
           <div class="single-step">
             <div class="icon">

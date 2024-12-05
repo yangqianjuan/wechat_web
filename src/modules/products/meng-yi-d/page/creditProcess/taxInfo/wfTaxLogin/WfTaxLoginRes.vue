@@ -141,14 +141,14 @@ export default {
     bottom: 8vh;
     background-color: #ff4a34;
   }
-  /deep/.refresh {
+  ::v-deep(.refresh) {
     bottom: 18vh;
-    /deep/ span {
+    ::v-deep span {
       color: #333 !important;
     }
   }
 }
-/deep/.van-empty {
+::v-deep(.van-empty) {
   .van-empty__description {
     text-indent: 2em;
     letter-spacing: 2px !important;
@@ -173,7 +173,7 @@ export default {
   }
 }
 .login-success {
-  /deep/.van-empty__image {
+  ::v-deep(.van-empty__image) {
     width: 180px;
     height: 180px;
   }

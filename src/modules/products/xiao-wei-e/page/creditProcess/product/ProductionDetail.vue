@@ -465,7 +465,7 @@ export default {
 <style lang="scss" scoped>
 .address-sel-wrapper {
   min-height: 5vh;
-  /deep/.address-wrapper {
+  ::v-deep(.address-wrapper) {
     height: 100%;
     width: 100%;
     display: flex;
@@ -688,7 +688,7 @@ export default {
     margin-top: 26px;
   }
 }
-/deep/.van-area {
+::v-deep(.van-area) {
   .van-picker__toolbar {
     padding: 16px 12px;
     .van-picker__cancel {

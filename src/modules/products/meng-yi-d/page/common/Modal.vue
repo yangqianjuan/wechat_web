@@ -104,7 +104,7 @@ export default {
         font-weight: 500;
         border-radius: 5px;
       }
-      /deep/.btn-cancel {
+      ::v-deep(.btn-cancel) {
         border: 1px solid $btn-border-color;
         margin-right: 70px;
         .van-button__text {

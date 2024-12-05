@@ -298,7 +298,7 @@ export default {
   width: 100%;
   top: 8.4375rem;
 }
-/deep/.selectAddress select {
+::v-deep(.selectAddress select) {
   -webkit-appearance: none;
   height: 30px;
   width: 110px;
@@ -312,7 +312,7 @@ export default {
   background: #ffffff;
   color: #7f7f7f;
 }
-/deep/.selectAddress option {
+::v-deep(.selectAddress) option {
   height: 30px;
   margin-left: 18px;
   border: 1px solid #dcdee2;

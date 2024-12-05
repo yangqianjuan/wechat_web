@@ -45,6 +45,17 @@ const customOptions = {
 
 // const image-webpack-loader = require('image-webpack-loader');
 module.exports = {
+  chainWebpack: (config) => {
+    config.module
+      .rule('pdf-worker')
+      .test(/pdf\.worker\.js$/)
+      .use('worker-loader')
+      .loader('worker-loader')
+      .options({ inline: 'no-fallback' });
+  },
+  configureWebpack: {
+    plugins: [new webpack.ProgressPlugin()]
+  },
   publicPath: './',
 
   outputDir: 'dist',
@@ -131,6 +142,7 @@ module.exports = {
   // 外部配置一些webpack的插件
   configureWebpack: (config) => {
     const plugins = [
+      new webpack.ProgressPlugin()
       // new webpack.ProvidePlugin({
       //   $: 'jquery',
       //   jQuery: 'jquery'
@@ -141,15 +153,7 @@ module.exports = {
       // })
     ];
     if (isProduction) {
-      plugins.push(
-        new CompressionWebpackPlugin({
-          filename: '[path].gz[query]',
-          algorithm: 'gzip',
-          test: productionGzipExtensions,
-          threshold: 10240,
-          minRatio: 0.8
-        })
-      );
+      plugins.push(new CompressionWebpackPlugin());
     }
     config.plugins = [...config.plugins, ...plugins];
   },

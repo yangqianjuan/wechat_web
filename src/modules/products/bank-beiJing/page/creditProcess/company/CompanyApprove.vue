@@ -672,7 +672,7 @@ export default {
     background: #ffffff;
     border-radius: 16px;
 
-    /deep/ .van-field__label {
+    ::v-deep .van-field__label {
       color: #c8c9cc;
     }
 
@@ -702,15 +702,15 @@ export default {
         margin-left: 45px;
         position: relative;
 
-        /deep/ .van-cell {
+        ::v-deep .van-cell {
           // padding-left: 0;
         }
 
-        /deep/ .van-field {
+        ::v-deep .van-field {
           padding-left: 0 !important;
         }
 
-        /deep/ .van-cell::after {
+        ::v-deep .van-cell::after {
           left: 0 !important;
         }
       }
@@ -795,7 +795,7 @@ export default {
       text-align: center;
       line-height: 88px;
 
-      /deep/ .van-button__text {
+      ::v-deep .van-button__text {
         font-size: 28px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
@@ -808,7 +808,7 @@ export default {
     }
   }
 
-  /deep/ .van-field__control {
+  ::v-deep .van-field__control {
     font-size: 28px !important;
     font-family: PingFangSC-Medium, PingFang SC !important;
     font-weight: 500 !important;

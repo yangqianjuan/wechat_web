@@ -124,7 +124,7 @@ export default {
   margin-top: 40px;
   width: 80%;
   margin-left: 10%;
-  /deep/.van-button__text {
+  ::v-deep(.van-button__text) {
     color: #333 !important;
   }
 }

@@ -189,7 +189,7 @@ export default {
   width: 33%;
   padding: 4px 0;
   height: unset;
-  /deep/.van-button__content {
+  ::v-deep(.van-button__content) {
     padding: 12px 0;
   }
 }

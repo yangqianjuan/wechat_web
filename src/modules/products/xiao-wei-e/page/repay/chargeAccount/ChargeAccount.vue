@@ -194,7 +194,7 @@ export default {
     .account-detail-operate {
       .account-num {
         margin-top: 41px;
-        /deep/.ivu-input-inner-container {
+        ::v-deep(.ivu-input-inner-container) {
           .ivu-input {
             height: 120px;
             font-size: 80px;
@@ -248,7 +248,7 @@ export default {
     // margin: 2px 0;
     background-color: #d8d8d8;
   }
-  /deep/.ivu-form-item {
+  ::v-deep(.ivu-form-item) {
     height: 110px;
     display: flex;
     align-items: center;
@@ -309,7 +309,7 @@ export default {
       }
     }
   }
-  /deep/.ivu-input {
+  ::v-deep(.ivu-input) {
     padding: 0 !important;
   }
 }

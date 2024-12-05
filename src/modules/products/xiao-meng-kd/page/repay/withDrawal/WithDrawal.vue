@@ -287,7 +287,7 @@ export default {
     height: 1px;
     background-color: #e2e2e2;
   }
-  /deep/.van-field {
+  ::v-deep(.van-field) {
     padding: 0;
     .van-field__control {
       font-size: 80px;
@@ -297,7 +297,7 @@ export default {
       letter-spacing: 3px;
     }
   }
-  /deep/.van-field__left-icon {
+  ::v-deep(.van-field__left-icon) {
     display: flex;
     align-items: center;
     .van-icon-gold-coin-o::before {

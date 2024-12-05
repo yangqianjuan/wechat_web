@@ -276,7 +276,7 @@ export default {
 .go-home {
   bottom: 90px;
   background-color: #ffffff !important;
-  /deep/span {
+  ::v-deepspan {
     color: #333 !important;
   }
 }

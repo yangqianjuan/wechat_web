@@ -48,8 +48,7 @@
   }
 }
 
-
-/deep/.ivu-select {
+::v-deep(.ivu-select) {
   font-size: 26px;
   height: 100%;
   .ivu-select-selection {
@@ -79,7 +78,7 @@
   }
 }
 
-/deep/.ivu-input {
+::v-deep(.ivu-input) {
   height: 100%;
   font-size: 24px;
 }

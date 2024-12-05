@@ -694,7 +694,7 @@ export default {
       }
     }
 
-    /deep/ .van-field__control {
+    ::v-deep .van-field__control {
       font-size: 28px !important;
       font-family: PingFangSC-Medium, PingFang SC !important;
       font-weight: 500 !important;
@@ -703,7 +703,7 @@ export default {
       text-fill-color: unset;
     }
 
-    /deep/ .van-cell {
+    ::v-deep .van-cell {
       padding-left: 4px;
       padding-right: 0;
     }
@@ -779,7 +779,7 @@ export default {
       text-align: center;
       line-height: 88px;
 
-      /deep/ .van-button__text {
+      ::v-deep .van-button__text {
         font-size: 28px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
@@ -859,7 +859,7 @@ export default {
       text-align: center;
       line-height: 88px;
 
-      /deep/ .van-button__text {
+      ::v-deep .van-button__text {
         font-size: 28px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;
@@ -881,7 +881,7 @@ export default {
     border-bottom: 1px solid #f8f9fa;
   }
 
-  /deep/ .van-picker__toolbar {
+  ::v-deep .van-picker__toolbar {
     display: none;
   }
 
@@ -906,7 +906,7 @@ export default {
       font-size: 28px;
       font-family: PingFangSC-Medium, PingFang SC;
 
-      /deep/ .van-button__text {
+      ::v-deep .van-button__text {
         font-size: 28px;
         font-family: PingFangSC-Medium, PingFang SC;
         font-weight: 500;

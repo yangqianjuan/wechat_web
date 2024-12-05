@@ -621,41 +621,41 @@ export default {
   text-indent: 2rem;
   letter-spacing: 1.5px;
 }
-/deep/.ivu-form-item {
+::v-deep(.ivu-form-item) {
   margin-bottom: 25px;
   border-bottom: 1px solid #edf1f5;
   padding-top: 0.6875rem;
 }
 
-/deep/.ivu-input {
+::v-deep(.ivu-input) {
   border: 0;
   border-radius: 0;
   padding-left: 0.8125rem;
 }
-/deep/.ivu-select-selection {
+::v-deep(.ivu-select-selection) {
   border: 0;
   border-radius: 0;
   padding: 0 4px;
 }
-// /deep/.ivu-form-item-content {
+// ::v-deep(.ivu-form-item-content {
 //   // line-height: 1.25rem;
 // }
-/deep/.ivu-form-item-error-tip {
+::v-deep(.ivu-form-item-error-tip) {
   margin-left: 0.625rem;
   padding-top: 0;
 }
 
-/deep/ .ivu-form-item-label:before {
+::v-deep .ivu-form-item-label:before {
   content: '';
 }
-/deep/.ivu-input-group-append {
+::v-deep(.ivu-input-group-append) {
   border: 0;
   border-radius: 0;
   background: #ffffff;
 }
 
 .bank-name {
-  /deep/.van-cell {
+  ::v-deep(.van-cell) {
     padding: 0;
   }
   .van-cell::after {
@@ -670,7 +670,7 @@ export default {
 }
 
 .error-msg {
-  /deep/.van-field__error-message {
+  ::v-deep(.van-field__error-message) {
     margin-left: 130px;
   }
 }

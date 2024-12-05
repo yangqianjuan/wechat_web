@@ -450,7 +450,7 @@ export default {
     background: rgba(173, 173, 173, 0.6) !important;
   }
 }
-/deep/ .captcha-img {
+::v-deep .captcha-img {
   min-height: 70px;
   display: flex;
   margin-top: 25px;

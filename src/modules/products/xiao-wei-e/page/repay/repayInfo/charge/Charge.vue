@@ -437,7 +437,7 @@ export default {
     border-bottom: 1px solid #d8d8d8;
   }
 }
-/deep/.charge-account.van-field {
+::v-deep(.charge-account.van-field) {
   padding: 0;
   .van-field__control {
     font-size: 80px;
@@ -445,7 +445,7 @@ export default {
     color: #333333;
     letter-spacing: 3px;
   }
-  /deep/.van-field__left-icon {
+  ::v-deep(.van-field__left-icon) {
     display: flex;
     align-items: center;
     .van-icon-gold-coin-o::before {

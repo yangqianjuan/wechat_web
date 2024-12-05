@@ -539,7 +539,7 @@ export default {
   }
 }
 
-/deep/ .captcha-img {
+::v-deep .captcha-img {
   min-height: 70px;
   display: flex;
   margin-top: 25px;

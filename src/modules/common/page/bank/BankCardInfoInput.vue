@@ -201,7 +201,7 @@ export default {
     font-size: 40px;
     color: #3552d0;
   }
-  /deep/.van-dropdown-menu {
+  ::v-deep(.van-dropdown-menu) {
     width: 100%;
     .van-dropdown-menu__bar {
       box-shadow: unset;

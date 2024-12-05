@@ -473,7 +473,7 @@ export default {
 }
 
 .reset-form {
-  /deep/.van-form {
+  ::v-deep(.van-form) {
     .van-field__label {
       span {
         font-size: 26px !important;
@@ -503,7 +503,7 @@ export default {
   align-items: center;
   justify-content: center;
   // background-color: #ffff;
-  /deep/.detail-btn {
+  ::v-deep(.detail-btn) {
     background-color: #2d8cf0;
     border: 0;
     width: 86vw;
@@ -633,7 +633,7 @@ export default {
   font-size: 24px;
   font-weight: 500;
 }
-/deep/.van-cell__value {
+::v-deep(.van-cell__value) {
   span {
     font-weight: 500;
     font-size: 26px !important;

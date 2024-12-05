@@ -275,7 +275,7 @@ export default {
         margin-bottom: 24px;
         margin-top: 88px;
 
-        /deep/ .van-button__text {
+        ::v-deep .van-button__text {
           font-size: 28px;
           font-family: PingFangSC-Medium, PingFang SC;
           font-weight: 500;
@@ -290,7 +290,7 @@ export default {
         border-radius: 44px;
         border: 2px solid #a60400;
 
-        /deep/ .van-button__text {
+        ::v-deep .van-button__text {
           font-size: 28px;
           font-family: PingFangSC-Medium, PingFang SC;
           font-weight: 500;

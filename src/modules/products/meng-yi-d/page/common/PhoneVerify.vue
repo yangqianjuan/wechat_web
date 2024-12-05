@@ -171,7 +171,7 @@ export default {
 .phone-verify-content {
   width: 686px;
   padding-bottom: 16px;
-  /deep/.ivu-form-item {
+  ::v-deep(.ivu-form-item) {
     .ivu-form-item-label {
       padding-left: 0 !important;
     }

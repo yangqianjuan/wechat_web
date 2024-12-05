@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-/deep/.van-field {
+::v-deep(.van-field) {
   display: flex;
   width: 100%;
   align-items: center;
@@ -33,7 +33,7 @@
   }
 }
 
-/deep/.van-cell::after {
+::v-deep(.van-cell::after) {
   border-bottom: 1px solid #d8d8d8;
 }
 

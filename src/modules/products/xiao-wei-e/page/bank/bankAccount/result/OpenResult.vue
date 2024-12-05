@@ -269,7 +269,7 @@ export default {
     color: #ffffff;
   }
 }
-/deep/.refresh-btn {
+::v-deep(.refresh-btn) {
   width: 200px;
   padding: 20px 0;
   height: unset;

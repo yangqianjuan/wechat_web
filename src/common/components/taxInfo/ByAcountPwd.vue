@@ -95,15 +95,15 @@ export default {
     font-size: 26px;
   }
 }
-/deep/.ivu-form-item-label:before {
+::v-deep(.ivu-form-item-label:before) {
   content: "";
 }
-/deep/.ivu-input {
+::v-deep(.ivu-input) {
   border: none;
   height: 1.125rem;
   padding: 0;
 }
-/deep/.ivu-form-item {
+::v-deep(.ivu-form-item) {
   margin-bottom: 15px;
   padding-top: 0.5rem;
   padding-bottom: 0.8125rem;
@@ -111,12 +111,12 @@ export default {
   padding-left: 1.25rem;
   background: #ffffff;
 }
-/deep/.ivu-form-item-error-tip {
+::v-deep(.ivu-form-item-error-tip) {
   padding-top: 17px;
   padding-bottom: 12px;
   z-index: 10;
 }
-/deep/.ivu-input[disabled] {
+::v-deep(.ivu-input[disabled]) {
   background: #ffffff;
 }
 </style>

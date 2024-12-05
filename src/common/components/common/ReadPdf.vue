@@ -316,7 +316,7 @@ export default {
     padding: 0 12px;
   }
 }
-/deep/ .doc-show {
+::v-deep .doc-show {
   width: 100%;
   height: 100%;
   overflow: auto;

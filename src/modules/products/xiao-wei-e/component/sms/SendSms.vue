@@ -89,7 +89,7 @@ export default {
 .sms-code {
   display: flex;
   align-items: center;
-  /deep/.van-button {
+  ::v-deep(.van-button) {
     height: unset;
     padding: 0;
     border: 0;

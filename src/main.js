@@ -20,6 +20,7 @@ Vue.use(iView);
 Vue.use(VueTools);
 Vue.use(VueCookies);
 Vue.use(Loading);
+Vue.use(store);
 Vue.config.productionTip = false;
 Vue.prototype.$axios = axios;
 Vue.prototype.$deviceInfo = deviceInfo;
